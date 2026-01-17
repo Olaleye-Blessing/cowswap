@@ -62,8 +62,8 @@ export function NetworksList(props: NetworksListProps): ReactNode {
                 </ExternalLink>
               )}
               {explorer && (
-                <ExternalLink href={explorer}>
-                  {explorerTitle}
+                <ExternalLink href={explorer} style={{ textTransform: 'capitalize' }}>
+                  {explorerTitle.toLowerCase()}
                   <styledEl.LinkOutCircle />
                 </ExternalLink>
               )}
